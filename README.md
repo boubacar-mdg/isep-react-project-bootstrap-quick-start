@@ -33,10 +33,27 @@ Cette stack est particulièrement adaptée pour :
 
 Avec cette configuration, vous disposez d'une base solide pour construire des applications web modernes, performantes et maintenables.
 
-
 ## Pour le lancer le projet pour la promière fois
 
 ```js
 npm install
 npm run dev
+```
+
+## Pour construire une image docker et lancer un container à partir de l'image
+
+Assurer vous que vous avez Docker et que l'application est active
+Pour construire l'image Docker, il faut se placer à la racine de projet et exécuter
+```js
+docker build -t react-isep-bootstrap . 
+```
+
+Pour lancer un container à partir de l'image précédement créer, il faut juste ouvrir un terminal sur la machine et exécuter
+```js
+docker run -d --name react-isep-bootstrap -p 81:80 react-isep-bootstrap 
+```
+
+L'application devrait être accessible sur le 
+```
+http://localhost:81 
 ```
