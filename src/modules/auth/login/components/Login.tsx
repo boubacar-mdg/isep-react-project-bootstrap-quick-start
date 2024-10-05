@@ -55,6 +55,7 @@ const Login = () => {
           type="text"
           id="username"
           value={loginPayload.username}
+          name="username"
           onChange={handleInputChange}
           placeholder="Saisir votre nom d'utilisateur..."
         />
@@ -64,6 +65,7 @@ const Login = () => {
         <input
           type="password"
           id="password"
+          name="password"
           value={loginPayload.password}
           onChange={handleInputChange}
           placeholder="Saisir votre Mot de passe..."
